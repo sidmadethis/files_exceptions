@@ -5,3 +5,9 @@ try:
 except FileNotFoundError:
     msg= "Sorry, the file " + filename + " does not exist"
     print(msg)
+else:
+    #count number of words in the file
+    words = contents.split()
+    num_words = len(words)
+    print("the file "+ filename + "has about " + str(num_words)+ " words")
+    
